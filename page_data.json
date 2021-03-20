@@ -9,9 +9,46 @@
     },
     {
       "name": "Facebook",
-      "url": "https://facebook.com"
+      "url": "https://facebook.com",
+      "change_name": true,
+      "change_display_name": true
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.com/",
+      "change_name": true,
+      "change_display_name": true
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://Linkedin.com",
+      "change_name": true,
+      "change_display_name": true
+    },
+    {
+      "name": "PayPal",
+      "url": "https://Paypal.com",
+      "change_name": "N/A",
+      "change_display_name": true
+    },
+    {
+      "name": "Spotify",
+      "url": "https://Spotify.com",
+      "change_name": false,
+      "change_display_name": true
+    },
+    {
+      "name": "Steam",
+      "url": "https://Steam.com",
+      "change_name": false,
+      "change_display_name": true
     }
+    
+    
+
+
   ],
+
   "es": [
     {
       "name": "Google",
