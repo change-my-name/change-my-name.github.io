@@ -1,0 +1,27 @@
+
+body {
+    background: lightyellow;
+    font: 18px Arial, sans-serif;
+}
+
+.title {
+    font-size: 80px;
+    padding: 20px
+}
+
+.info {
+
+}
+
+.table {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.tr {
+    border: 1px solid black;
+}
+
+.td {
+    border: 1px solid black;
+}

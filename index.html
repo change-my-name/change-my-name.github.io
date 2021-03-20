@@ -3,45 +3,39 @@
 <meta charset="utf-8">
 
 <head>
-    <script src="scripts.js"></script>
-    <title>Change-My-Name</title>
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-    </script>
-
-    <script type = "text/javascript" language = "javascript">
-        function load() {
-            $("#driver").ready(function(event){
-                $.getJSON('result.json', function(data) {
-
-
-                    for ( let site of data.en ) {
-
-                        $('#list').append("<tr>")
-                        $('#list').append('<td>Name: ' + site.name + '</td>');
-                        $('#list').append('<td>Url : ' + site.url + '</td>');
-                        $('#list').append('<td>Change Display Name: ' + site.change_name + '</td>');
-                        $('#list').append("</tr>")
-
-                    }
-                });
-            });
-
-        };
-    </script>
+    <title>Change My Name</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/style.css">
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/scripts.js"></script>
 </head>
-<body onload="load()">
 
-<div id="spacer" style="height: 100px;">
+<body onload="load()" class="ml-5 mr-5">
 
-</div>
+    <div id="spacer" style="height: 100px;"></div>
+    <div align="center" class="title">Change-My-Name</div>
+    <div id="spacer" style="height: 90px;"></div>
 
-<div align="center" style="font-size: 40px;">
-    Change-My-Name
-</div>
+    <div class="info m-4">
+        <p>This is about this project . there should probably be a nice looking box around this text, and it should be fairly centered in the screen. The list below should fill the entire screen if the user selects it, or scrolls down to look at it.</p>
+    </div>
 
-<div id = "list">
-    List
-</div>
+    <div id="spacer" style="height: 60px;"></div>
+
+    <div>
+    <table class="table">
+        <thead>
+            <tr class="tr">
+                <th scope="col" class="td" >Name</th>
+                <th scope="col" class="td">Url</th>
+                <th scope="col" class="td">Change Name</th>
+                <th scope="col" class="td">Change Display Name</th>
+            </tr>
+        </thead>
+    <!--    List is generated (in JavaScript) right here , before </table>-->
+        <tbody id="list"></tbody>
+    </table>
+    </div>
 
 </body>
 </html>

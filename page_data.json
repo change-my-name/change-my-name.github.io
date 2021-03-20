@@ -4,8 +4,8 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "change-name": true,
-      "change-display-name": true
+      "change_name": true,
+      "change_display_name": true
     },
     {
       "name": "Facebook",
@@ -16,8 +16,8 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "change-name": true,
-      "change-display-name": true
+      "change_name": true,
+      "change_display_name": true
     },
     {
       "name": "Facebook",
