@@ -1,19 +1,33 @@
 
 body {
-    background: lightyellow;
+    background: #fff2ff;
     font: 18px Arial, sans-serif;
 }
 
 .title {
-    font-size: 80px;
     padding: 20px
+
+    font-size: 200px;
+    font-family: "Lucida Console", Monaco, monospace;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: capitalize;
 }
 
 .info {
-
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 .table {
+    background-color: #f7fbff;
     border: 1px solid black;
     flex-grow: 1;
 }
