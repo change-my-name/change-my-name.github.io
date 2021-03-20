@@ -24,7 +24,7 @@
     },
     {
       "name": "LinkedIn",
-      "url": "https://Linkedin.com",
+      "url": "https://linkedin.com",
       "change_name": true,
       "change_display_name": true,
       "req_legal_name": false
@@ -63,8 +63,14 @@
       "change_name": true,
       "change_display_name": true,
       "req_legal_name": false
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://microsoft.com",
+      "change_name": "N/A",
+      "change_display_name": true,
+      "req_legal_name": false
     }
-    
 
   ],
 
