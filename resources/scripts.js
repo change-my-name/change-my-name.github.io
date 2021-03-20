@@ -2,13 +2,17 @@
 
 var myFunction = function() {
 
-    setTimeout(() => {
-        document.getElementById('body').style.background === "#ccdbff";
-    }, 1000);
-    setTimeout(() => {
-        document.getElementById('body').style.background === "#ffcce8";
-    }, 1000);
+    if (document.getElementById('body').style.background === "#ccdbff") {
+        bgColor = "#ffcce8";
+    }
+    else {
+        bgColor = "#ccdbff";
+    }
+    document.getElementById('body').style.background = bgColor;
 };
+
+var timer = setInterval(myFunction, 1500); // call every 1000 milliseconds
+
 
 function loadPageData() {
     $.getJSON('page_data.json', function(data) {
