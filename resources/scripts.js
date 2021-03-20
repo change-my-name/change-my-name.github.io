@@ -2,13 +2,6 @@
 
 var myFunction = function() {
 
-    setTimeout(() => {
-        document.getElementById('body').style.background === "#ccdbff";
-    }, 1000);
-    setTimeout(() => {
-        document.getElementById('body').style.background === "#ffcce8";
-    }, 1000);
-
     if (document.getElementById('body').style.background === "#ccdbff") {
         bgColor = "#ffcce8";
     }

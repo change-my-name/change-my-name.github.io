@@ -53,8 +53,20 @@ body {
 
 .tr {
     border: 1px solid black;
+
+}
+
+.tr:hover{
+    background:black;
 }
 
 .td {
     border: 1px solid black;
+}
+
+.hoverable {
+    background-color: #FFFFFF;
+}
+.hoverable:hover {
+    background-color: #000000;
 }
