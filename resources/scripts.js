@@ -23,6 +23,8 @@ function loadPageData() {
             if ( site.change_display_name === undefined ) { site.change_display_name = "N/A"; }
             if ( site.change_display_name === "true" ) { site.change_display_name = "N/A"; }
             if ( site.change_name === "true" ) { site.change_name = "N/A"; }
+            
+            
 
             list.append("<tr class=\'tr\'>")
             list.append('<td class=\'td\'>' + site.name + '</td>');

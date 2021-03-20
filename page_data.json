@@ -5,47 +5,66 @@
       "name": "Google",
       "url": "https://google.com",
       "change_name": true,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
     },
     {
       "name": "Facebook",
       "url": "https://facebook.com",
       "change_name": true,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
     },
     {
       "name": "Discord",
       "url": "https://discord.com/",
       "change_name": true,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
     },
     {
       "name": "LinkedIn",
       "url": "https://Linkedin.com",
       "change_name": true,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
     },
     {
       "name": "PayPal",
       "url": "https://Paypal.com",
       "change_name": "N/A",
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": true
     },
     {
       "name": "Spotify",
       "url": "https://Spotify.com",
       "change_name": false,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
     },
     {
       "name": "Steam",
       "url": "https://Steam.com",
       "change_name": false,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
+    },
+    {
+      "name": "Twitter",
+      "url": "https://Twitter.com",
+      "change_name": true,
+      "change_display_name": true,
+      "req_legal_name": false
+    },
+    {
+      "name": "YouTube",
+      "url": "https://Youtube.com",
+      "change_name": true,
+      "change_display_name": true,
+      "req_legal_name": false
     }
     
-    
-
 
   ],
 
@@ -54,11 +73,15 @@
       "name": "Google",
       "url": "https://google.com",
       "change_name": true,
-      "change_display_name": true
+      "change_display_name": true,
+      "req_legal_name": false
     },
     {
       "name": "Facebook",
-      "url": "https://facebook.com"
+      "url": "https://facebook.com",
+      "change_name": true,
+      "change_display_name": true,
+      "req_legal_name": false
     }
   ]
 }
