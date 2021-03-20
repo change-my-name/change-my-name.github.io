@@ -16,6 +16,12 @@ var timer = setInterval(myFunction, 1500); // call every 1000 milliseconds
 
 function loadPageData() {
     $.getJSON('page_data.json', function(data) {
+
+        var theList = document.getElementById("theList");
+        theList.classList.add("table");
+        theList.classList.add("table-srtiped");
+
+
         let list = $('#list');
 
         for ( let site of data.en ) {
