@@ -3,30 +3,42 @@
 <meta charset="utf-8">
 
 <head>
+    <script src="scripts.js"></script>
     <title>Change-My-Name</title>
-    <script type = "text/javascript"
-            src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
 
     <script type = "text/javascript" language = "javascript">
-        $(document).ready(function() {
-
+        function load() {
             $("#driver").ready(function(event){
                 $.getJSON('result.json', function(jd) {
-                    $('#stage').html('<p> Name: ' + jd.name + '</p>');
-                    $('#stage').append('<p>Date : ' + jd.date+ '</p>');
-                    $('#stage').append('<p> Car: ' + jd.car+ '</p>');
+
+                    $('#list').append("<tr>")
+
+                    var list = ''
+                    $('#list').append('<td>Name: ' + jd.name + '</td>');
+                    $('#list').append('<td>Url : ' + jd.url+ '</td>');
+                    $('#list').append('<td>Change Display Name: ' + jd.change_name+ '</td>');
+
+                    $('#list').append("</tr>")
                 });
             });
 
-        });
+        };
     </script>
 </head>
+<body onload="load()">
 
-<body>
+<div id="spacer" style="height: 100px;">
 
-<div id = "stage">
-    STAGE
+</div>
+
+<div align="center" style="font-size: 40px;">
+    Change-My-Name
+</div>
+
+<div id = "list">
+    List
 </div>
 
 </body>

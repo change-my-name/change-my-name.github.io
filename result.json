@@ -1,5 +1,7 @@
+
 {
-"page_name": "Youtube",
-"date" : "67",
-"car": "truck"
+  "name": "Google",
+  "url": "https://google.com",
+  "change_name": true,
+  "change-display-name": true
 }
