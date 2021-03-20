@@ -11,16 +11,18 @@
     <script type = "text/javascript" language = "javascript">
         function load() {
             $("#driver").ready(function(event){
-                $.getJSON('result.json', function(jd) {
+                $.getJSON('result.json', function(data) {
 
-                    $('#list').append("<tr>")
 
-                    var list = ''
-                    $('#list').append('<td>Name: ' + jd.name + '</td>');
-                    $('#list').append('<td>Url : ' + jd.url+ '</td>');
-                    $('#list').append('<td>Change Display Name: ' + jd.change_name+ '</td>');
+                    for ( let site of data.en ) {
 
-                    $('#list').append("</tr>")
+                        $('#list').append("<tr>")
+                        $('#list').append('<td>Name: ' + site.name + '</td>');
+                        $('#list').append('<td>Url : ' + site.url + '</td>');
+                        $('#list').append('<td>Change Display Name: ' + site.change_name + '</td>');
+                        $('#list').append("</tr>")
+
+                    }
                 });
             });
 

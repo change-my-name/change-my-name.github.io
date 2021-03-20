@@ -1,7 +1,27 @@
 
 {
-  "name": "Google",
-  "url": "https://google.com",
-  "change_name": true,
-  "change-display-name": true
+  "en": [
+    {
+      "name": "Google",
+      "url": "https://google.com",
+      "change-name": true,
+      "change-display-name": true
+    },
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com"
+    }
+  ],
+  "es": [
+    {
+      "name": "Google",
+      "url": "https://google.com",
+      "change-name": true,
+      "change-display-name": true
+    },
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com"
+    }
+  ]
 }
