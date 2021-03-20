@@ -50,23 +50,16 @@ body {
     border: 1px solid black;
     flex-grow: 1;
 }
-
-.tr {
-    border: 1px solid black;
-    background: black;
-}
-
-.tr:hover{
-    background:black;
-}
-
 .td {
     border: 1px solid black;
 }
 
-.hoverable {
-    background-color: #FFFFFF;
+tr {
+    border: 1px solid black;
+    background: black;
 }
-.hoverable:hover {
-    background-color: #000000;
+
+tr:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
