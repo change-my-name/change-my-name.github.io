@@ -5,21 +5,33 @@ body {
 }
 
 .title {
-    padding: 20px
+    padding: 20px;
 
-    font-size: 200px;
+    font-size: 57px;
     font-family: "Lucida Console", Monaco, monospace;
-    letter-spacing: 6px;
-    word-spacing: 6px;
+    letter-spacing: 15px;
     color: #000000;
+    word-spacing: -15px;
     font-weight: bold;
-    text-decoration: underline;
     font-style: normal;
     font-variant: normal;
-    text-transform: capitalize;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
 .info {
+
+    background-image: linear-gradient(to right,
+    rgba(200, 200, 255, 0.4),
+    rgba(255, 225, 225, 0.4),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 225, 225, 0.4),
+    rgba(200, 200, 255, 0.4)
+    );
+
     margin-top: 20px;
     margin-bottom: 60px;
     margin-right: 150px;
