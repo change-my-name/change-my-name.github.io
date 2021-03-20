@@ -29,6 +29,7 @@ function loadPageData() {
             list.append('<td class=\'td\'>' + site.url + '</td>');
             list.append('<td class=\'td\'>' + site.change_name + '</td>');
             list.append('<td class=\'td\'>' + site.change_display_name + '</td>');
+            list.append('<td class=\'td\'>' + site.req_legal_name + '</td>');
             list.append("</tr>")
         }
     });
