@@ -22,7 +22,13 @@ p {
     padding: 20px;
 
     font-size: 57px;
-    font-family: "Lucida Console", Monaco, monospace;
+    /*font-family: "Lucida Console", Monaco, monospace;*/
+    font-family: "Courier New", Courier, monospace;
+
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 4px;
+    word-spacing: 3.4px;
+
     letter-spacing: 15px;
     color: #000000;
     word-spacing: -15px;
