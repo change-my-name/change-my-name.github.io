@@ -34,11 +34,11 @@ body {
 .info {
 
     background-image: linear-gradient(to right,
-    rgba(200, 200, 255, 0.4),
-    rgba(255, 225, 225, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 225, 225, 0.4),
-    rgba(200, 200, 255, 0.4)
+    rgba(200, 200, 255, 0.6),
+    rgba(255, 225, 225, 0.8),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 225, 225, 0.8),
+    rgba(200, 200, 255, 0.6)
     );
 
     margin-top: 20px;
@@ -59,11 +59,11 @@ body {
     border-top: none;
 }
 
+
 th {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    border-top: none;
 }
 
 td {
@@ -81,19 +81,19 @@ tr:hover {
 
 /* the first 'th' within the first 'tr' of the 'thead': */
 thead tr:first-child th:first-child {
-    border-radius: 0.6em 0 0 0;
+    border-radius: 0.5em 0 0 0;
 }
 /* the last 'th' within the first 'tr' of the 'thead': */
 thead tr:first-child th:last-child {
-    border-radius: 0 0.6em 0 0;
+    border-radius: 0 0.5em 0 0;
 }
 /* the first 'td' within the last 'tr' of the 'tbody': */
 tbody tr:last-child td:first-child {
-    border-radius: 0 0 0 0.6em;
+    border-radius: 0 0 0 0.5em;
 }
 /* the last 'td' within the last 'tr' of the 'tbody': */
 tbody tr:last-child td:last-child {
-    border-radius: 0 0 0.6em 0;
+    border-radius: 0 0 0.5em 0;
 }
 
 
