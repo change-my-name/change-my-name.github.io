@@ -1,7 +1,7 @@
 
 
 body {
-    font: 18px Arial, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
 
     background: #ffcce8;
     -webkit-transition: all 1s ease-in-out;
@@ -12,6 +12,19 @@ body {
     transition-duration: 1s;
     padding: 20px;
 }
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    all: initial;
+    * {
+        all: unset;
+    }
+}
+
 
 .title {
     padding: 20px;
@@ -25,8 +38,6 @@ body {
     font-style: normal;
     font-variant: normal;
 
-    margin-top: 20px;
-    margin-bottom: 60px;
     margin-right: 200px;
     margin-left: 200px;
 }
@@ -84,6 +95,7 @@ td {
 
 tr {
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 tr:hover {
