@@ -84,7 +84,11 @@ th {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    cursor: default;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #e0e0e0;
 }
 
 td {
@@ -95,6 +99,10 @@ td {
 tr {
     background-color: #ffffff;
     cursor: pointer;
+}
+
+#topRow:hover {
+    background-color: transparent;
 }
 
 tr:hover {
