@@ -78,11 +78,9 @@ function loadSiteInfo() {
 function updateSiteInfo(req) {
     document.title = `Change My Name | ${req.name}`;
     document.getElementById("site-name").innerHTML = `<a href=${req.url}>${req.name}</a>`;
-    document.getElementById("change-name").innerHTML = `Can change name:`;
-    document.getElementById("change-nameTF").innerHTML = `${req.change_name}`;
+    document.getElementById("change-name").innerHTML = `Can change name: <b>${req.change_name}</b>`;
 
-    document.getElementById("change-display").innerHTML = `Can change display name:`;
-    document.getElementById("change-displayTF").innerHTML = `${req.change_display_name}`;
+    document.getElementById("change-display").innerHTML = `Can change display name: <b>${req.change_display_name}</b>`;
     document.getElementById("grade").innerHTML = `Grade: ${req.grade}`;
     if("support" in req){
         document.getElementById("process-link").innerHTML = `<a href=${req.process}>Support Article</a>`;
