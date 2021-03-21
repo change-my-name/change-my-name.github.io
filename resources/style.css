@@ -1,4 +1,5 @@
 
+
 body {
     font: 18px Arial, sans-serif;
 
@@ -9,6 +10,7 @@ body {
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     transition-duration: 1s;
+    padding: 20px;
 }
 
 .title {
@@ -92,4 +94,45 @@ tbody tr:last-child td:first-child {
 /* the last 'td' within the last 'tr' of the 'tbody': */
 tbody tr:last-child td:last-child {
     border-radius: 0 0 0.6em 0;
+}
+
+
+
+/*INFO PAGE*/
+
+
+.card {
+    width: 75%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1px 20px 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+/* Remove underline from links until hover */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .card, .subheader {
+        width: 100%;
+        padding: 1px 20px 20px;
+    }
 }
