@@ -49,24 +49,47 @@ body {
     background-color: #f7fbff;
     flex-grow: 1;
 
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: rgba(0, 0, 0, 0.4) !important;
-    border-collapse: inherit;
-    border-radius: 5px;
+    /*border-width: 1px !important;*/
+    /*border-style: solid !important;*/
+    /*border-color: rgba(0, 0, 0, 0.4) !important;*/
+    /*border-collapse: inherit;*/
+    border-radius: 10px;
+    border-top: none;
 }
 
-th, td {
+th {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    border-top: none;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
 }
 
 tr {
-    border: 1px solid black;
     background-color: #ffffff;
 }
 
 tr:hover {
     background-color: #e0e0e0;
+}
+
+/* the first 'th' within the first 'tr' of the 'thead': */
+thead tr:first-child th:first-child {
+    border-radius: 0.6em 0 0 0;
+}
+/* the last 'th' within the first 'tr' of the 'thead': */
+thead tr:first-child th:last-child {
+    border-radius: 0 0.6em 0 0;
+}
+/* the first 'td' within the last 'tr' of the 'tbody': */
+tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 0.6em;
+}
+/* the last 'td' within the last 'tr' of the 'tbody': */
+tbody tr:last-child td:last-child {
+    border-radius: 0 0 0.6em 0;
 }
