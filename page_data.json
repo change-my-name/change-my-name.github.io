@@ -30,7 +30,7 @@
     },
     {
       "name": "Discord",
-      "url": "https://discord.com/",
+      "url": "https://discord.com",
       "change_name": true,
       "change_display_name": true,
       "req_legal_name": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "PayPal",
-      "url": "https://Paypal.com",
+      "url": "https://paypal.com",
       "change_name": "N/A",
       "change_display_name": true,
       "req_legal_name": true,
@@ -71,7 +71,7 @@
     },
     {
       "name": "Spotify",
-      "url": "https://Spotify.com",
+      "url": "https://spotify.com",
       "change_name": false,
       "change_display_name": true,
       "req_legal_name": false,
@@ -84,7 +84,7 @@
     },
     {
       "name": "Steam",
-      "url": "https://Steam.com",
+      "url": "https://store.steampowered.com",
       "change_name": false,
       "change_display_name": true,
       "req_legal_name": false,
@@ -96,7 +96,7 @@
     },
     {
       "name": "Twitter",
-      "url": "https://Twitter.com",
+      "url": "https://twitter.com",
       "change_name": true,
       "change_display_name": true,
       "req_legal_name": false,
@@ -110,7 +110,7 @@
     },
     {
       "name": "YouTube",
-      "url": "https://Youtube.com",
+      "url": "https://youtube.com",
       "change_name": true,
       "change_display_name": true,
       "req_legal_name": false,

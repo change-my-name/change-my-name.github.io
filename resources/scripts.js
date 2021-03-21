@@ -28,7 +28,7 @@ function loadPageData() {
 
             list.append('<tr>' +
                 '<td> <a href=info.html?site=' + site.name + '>' + site.name + '</td>' +
-                '<td>' + site.url + '</td>' +
+                '<td>' + site.grade + '</td>' +
                 '<td>' + site.change_name + '</td>' +
                 '<td>' + site.change_display_name + '</td>' +
                 '<td>' + site.req_legal_name + '</td>' +
