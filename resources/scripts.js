@@ -41,6 +41,19 @@ function loadPageData() {
             } else {
                 site.req_legal_name = "No!";
             }
+            switch(site.grade){
+                case "Good":
+                    site.grade = "Good &#x2705;";
+                    break;
+                case "Mediocre":
+                    site.grade = "Mediocre &#x26A0;";
+                    break;
+                case "Poor":
+                    site.grade = "Poor &#x274C;";
+                    break;
+                case "Unchangeable":
+                    site.grade = "Unchangeable &#x1F6AB;"
+            }
 
 
             list.append(
