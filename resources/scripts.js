@@ -19,21 +19,45 @@ function loadPageData() {
         let list = $('#list');
 
         for ( let site of data.en ) {
-            if ( site.change_name === undefined ) { site.change_name = "N/A"; }
-            if ( site.change_display_name === undefined ) { site.change_display_name = "N/A"; }
+            if (site.change_name === undefined) {
+                site.change_name = "N/A";
+            }
+            if (site.change_display_name === undefined) {
+                site.change_display_name = "N/A";
+            }
 
-            if ( site.change_name ) { site.change_name = "Yes!"; } else { site.change_name = "no"; }
-            if ( site.change_display_name ) { site.change_display_name = "Yes!"; } else { site.change_display_name = "no"; }
-            if ( site.req_legal_name ) { site.req_legal_name = "yes"; } else { site.req_legal_name = "No!"; }
+            if (site.change_name) {
+                site.change_name = "Yes!";
+            } else {
+                site.change_name = "no";
+            }
+            if (site.change_display_name) {
+                site.change_display_name = "Yes!";
+            } else {
+                site.change_display_name = "no";
+            }
+            if (site.req_legal_name) {
+                site.req_legal_name = "yes";
+            } else {
+                site.req_legal_name = "No!";
+            }
 
-            list.append('<tr>' +
-                '<td> <a href=info.html?site=' + site.name + '>' + site.name + '</td>' +
+
+            list.append(
+                '<tr id=' + site.name + '>' +
+                '<td>' + site.name + '</td>' +
                 '<td>' + site.grade + '</td>' +
                 '<td>' + site.change_name + '</td>' +
                 '<td>' + site.change_display_name + '</td>' +
                 '<td>' + site.req_legal_name + '</td>' +
-                '</tr>')
+                '</tr>'
+            )
 
+            var row = document.getElementById(site.name);
+
+            row.addEventListener("click", () => {
+                window.location.href = 'http://change-my-name.github.io/info.html?site=' + site.name
+            });
         }
     });
 };
@@ -58,7 +82,7 @@ function updateSiteInfo(req) {
     document.getElementById("change-display").innerHTML = `Can change display name: ${req.change_display_name}`;
     document.getElementById("grade").innerHTML = `Grade: ${req.grade}`;
     if("support" in req){
-        document.getElementById("process-link").innerHTML = `<a href=${req.support}>Support article</a>`;
+        document.getElementById("process-link").innerHTML = `<a href=${req.support}>Support Article</a>`;
         document.getElementById("process-link").hidden = false;
     }
     for(let c of req.criteria){

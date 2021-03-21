@@ -1,7 +1,7 @@
 
 
 body {
-    font: 18px Arial, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
 
     background: #ffcce8;
     -webkit-transition: all 1s ease-in-out;
@@ -11,6 +11,11 @@ body {
     transition: all 1s ease-in-out;
     transition-duration: 1s;
     padding: 20px;
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
 }
 
 .title {
@@ -25,8 +30,6 @@ body {
     font-style: normal;
     font-variant: normal;
 
-    margin-top: 20px;
-    margin-bottom: 60px;
     margin-right: 200px;
     margin-left: 200px;
 }
@@ -75,6 +78,7 @@ th {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    cursor: default;
 }
 
 td {
@@ -84,6 +88,7 @@ td {
 
 tr {
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 tr:hover {
@@ -160,9 +165,14 @@ a:active {
 
 hr.bLine { /* Cool line under "Welcome to Mixr" */
     border-top: 4px solid rgb(64, 153, 255);
-    width: 40%;
+    width: 25%;
     float: left;
-  }
+}
+hr.bLine2 { /* Cool line under "Welcome to Mixr" */
+    border-top: 3px solid rgb(64, 153, 255);
+    width: 50%;
+    float: left;
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
