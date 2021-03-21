@@ -56,6 +56,14 @@ function updateSiteInfo(req) {
     document.getElementById("site-name").innerHTML = `<a href=${req.url}>${req.name}</a>`;
     document.getElementById("change-name").innerHTML = `Can change name: ${req.change_name}`;
     document.getElementById("change-display").innerHTML = `Can change display name: ${req.change_display_name}`;
+    document.getElementById("grade").innerHTML = `Grade: ${req.grade}`;
+    if("support" in req){
+        document.getElementById("process-link").innerHTML = `<a href=${req.process}>Support article</a>`;
+        document.getElementById("process-link").hidden = false;
+    }
+    for(let c of req.criteria){
+        document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + `<li>${c}</li>`;
+    }
 }
 
 function GetURLParameter(sParam){

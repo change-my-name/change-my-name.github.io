@@ -1,4 +1,3 @@
-
 {
   "en": [
     {
@@ -6,70 +5,144 @@
       "url": "https://google.com",
       "change_name": true,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://support.google.com/accounts/answer/27442",
+      "grade": "Good",
+      "criteria": [
+        "Can be changed as many times as you want",
+        "Old name may appear until cache and cookies are cleared"
+      ]
     },
     {
       "name": "Facebook",
       "url": "https://facebook.com",
       "change_name": true,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://www.facebook.com/help/1090831264320592/",
+      "grade": "Mediocre",
+      "criteria":[
+        "\"Should be the name that your friends call you in everyday life\"",
+        "Can only change once every 60 days",
+        "May require submitting an ID (government or non-government) to verify",
+        "May require a form to request change and confirm name"
+      ]
     },
     {
       "name": "Discord",
       "url": "https://discord.com/",
       "change_name": true,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://support.discord.com/hc/en-us/articles/213480948-How-do-I-change-my-Username-",
+      "grade": "Good",
+      "criteria":[
+        "Can be changed twice an hour",
+        "Nicknames can be set at a per server level",
+        "Previous user mentions (using the @ tag) will change to reflect updated name"
+      ]
     },
     {
       "name": "LinkedIn",
       "url": "https://linkedin.com",
       "change_name": true,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://www.linkedin.com/help/linkedin/answer/79",
+      "grade": "Good",
+      "criteria":[
+        "May only be real or preferred professional name, plus preferred pronouns",
+        "Connections can see both first and last name"
+      ]
     },
     {
       "name": "PayPal",
       "url": "https://Paypal.com",
       "change_name": "N/A",
       "change_display_name": true,
-      "req_legal_name": true
+      "req_legal_name": true,
+      "support": "https://www.paypal.com/us/smarthelp/article/how-do-i-change-the-name-on-my-paypal-account-faq926",
+      "grade": "Poor",
+      "criteria":[
+        "Can change up to 2 characters only once after name creation, to fix misspellings",
+        "Legal or major name changes may require you to upload supporting documentation",
+        "Requires legal name as shown on government IDs"
+      ]
     },
     {
       "name": "Spotify",
       "url": "https://Spotify.com",
       "change_name": false,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://support.spotify.com/us/article/change-my-username/",
+      "grade": "Poor",
+      "criteria":[
+        "Can only be changed on mobile platforms",
+        "Only display name can be changed, username is permanent"
+      ]
     },
     {
       "name": "Steam",
       "url": "https://Steam.com",
       "change_name": false,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://support.steampowered.com/kb_article.php?ref=1558-qyax-1965#:~:text=Your%20SteamID%20and%20Steam%20Account,%22Edit%20my%20SteamID%20page%22",
+      "grade": "Mediocre",
+      "criteria":[
+        "Records a list of previously used display names (can be cleared)"
+      ]
     },
     {
       "name": "Twitter",
       "url": "https://Twitter.com",
       "change_name": true,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://help.twitter.com/en/managing-your-account/change-twitter-handle",
+      "grade": "Good",
+      "criteria":[
+        "Display name is separate from username/handle and can be changed at any time",
+        "Old handle mentions and direct messages will not change to reflect a new handle",
+        "Old username is immediately available to be used by another account"
+      ]
     },
     {
       "name": "YouTube",
       "url": "https://Youtube.com",
       "change_name": true,
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://support.google.com/youtube/answer/2657964?co=GENIE.Platform%3DDesktop&hl=en&oco=0#zippy=%2Cchange-your-channel-name-and-description",
+      "grade": "Good",
+      "criteria":[
+        "YouTube account name will match Google account name unless using a brand account"
+      ]
     },
     {
       "name": "Microsoft",
       "url": "https://microsoft.com",
       "change_name": "N/A",
       "change_display_name": true,
-      "req_legal_name": false
+      "req_legal_name": false,
+      "support": "https://support.microsoft.com/en-us/account-billing/how-to-change-your-microsoft-account-display-name-917b1d70-5915-d04e-243a-a618f96ef1d5",
+      "grade": "Good",
+      "criteria":[
+        "Changing Microsoft account display name will also change Outlook and Windows 10"
+      ]
+    },
+    {
+      "name": "Reddit",
+      "url": "https://reddit.com",
+      "change_name": false,
+      "change_display_name": false,
+      "req_legal_name": false,
+      "support": "https://www.reddit.com/r/help/wiki/faq#wiki_is_it_possible_to_change_my_username.3F",
+      "grade": "Unchangeable",
+      "criteria":[
+        "Reddit usernames cannot be changed in any way, including things as small as capitalization"
+      ]
     }
 
   ],
