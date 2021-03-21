@@ -58,7 +58,7 @@ function updateSiteInfo(req) {
     document.getElementById("change-display").innerHTML = `Can change display name: ${req.change_display_name}`;
     document.getElementById("grade").innerHTML = `Grade: ${req.grade}`;
     if("support" in req){
-        document.getElementById("process-link").innerHTML = `<a href=${req.process}>Support article</a>`;
+        document.getElementById("process-link").innerHTML = `<a href=${req.process}>Support Article</a>`;
         document.getElementById("process-link").hidden = false;
     }
     for(let c of req.criteria){

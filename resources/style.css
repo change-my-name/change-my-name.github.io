@@ -142,9 +142,14 @@ a:active {
 
 hr.bLine { /* Cool line under "Welcome to Mixr" */
     border-top: 4px solid rgb(64, 153, 255);
-    width: 40%;
+    width: 25%;
     float: left;
-  }
+}
+hr.bLine2 { /* Cool line under "Welcome to Mixr" */
+    border-top: 3px solid rgb(64, 153, 255);
+    width: 50%;
+    float: left;
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
