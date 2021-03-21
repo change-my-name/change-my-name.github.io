@@ -1,5 +1,4 @@
 
-
 var colorChange = function() {
 
     if (document.getElementById('body').style.background === "#ccdbff") {
@@ -115,8 +114,6 @@ function GetURLParameter(sParam){
     }
   }
 
-
-
 function searchFunction() {
     // Declare variables
     var input, filter, table, tr, td, i, txtValue;
@@ -138,4 +135,3 @@ function searchFunction() {
         }
     }
 }
-

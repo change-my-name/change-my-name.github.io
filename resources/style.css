@@ -3,15 +3,18 @@
 body {
     font-family: Verdana, Geneva, sans-serif;
 
-    background: #ffcce8;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    transition-duration: 1s;
+    /*background: #ffcce8;*/
+    transition: all 0.5s ease-in-out;
+    /*transition-duration: 0.5s;*/
     padding: 20px;
+
+    background: #ccdbff;
+    /*background: radial-gradient(circle, rgba(204,219,255,1) 4%, rgba(204,219,255,1) 84%, rgba(255,204,232,1) 94%);*/
+
 }
+/*#githubIcon:hover ~ body {*/
+/*    background: #ccdbff*/
+/*}*/
 
 p {
     font-family: Verdana, Geneva, sans-serif;
@@ -144,6 +147,12 @@ input{
 }
 .input-wrapper{
     position: relative;
+}
+
+#githubIcon {
+    float: right;
+    height: 60px;
+    width: 60px;
 }
 
 
