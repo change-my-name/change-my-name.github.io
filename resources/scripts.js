@@ -16,27 +16,24 @@ var timer = setInterval(myFunction, 1500); // call every 1000 milliseconds
 
 function loadPageData() {
     $.getJSON('page_data.json', function(data) {
-
-        var theList = document.getElementById("theList");
-        theList.classList.add("table");
-        theList.classList.add("table-srtiped");
-
-
         let list = $('#list');
 
         for ( let site of data.en ) {
             if ( site.change_name === undefined ) { site.change_name = "N/A"; }
             if ( site.change_display_name === undefined ) { site.change_display_name = "N/A"; }
-            if ( site.change_display_name === "true" ) { site.change_display_name = "N/A"; }
-            if ( site.change_name === "true" ) { site.change_name = "N/A"; }
 
-            list.append("<tr>")
-            list.append(`<td class='td'> <a href=info.html?site=${site.name}>${site.name} </td>`);
-            list.append('<td class=\'td\'>' + site.url + '</td>');
-            list.append('<td class=\'td\'>' + site.change_name + '</td>');
-            list.append('<td class=\'td\'>' + site.change_display_name + '</td>');
-            list.append('<td class=\'td\'>' + site.req_legal_name + '</td>');
-            list.append("</tr>")
+            if ( site.change_name ) { site.change_name = "Yes!"; } else { site.change_name = "no"; }
+            if ( site.change_display_name ) { site.change_display_name = "Yes!"; } else { site.change_display_name = "no"; }
+            if ( site.req_legal_name ) { site.req_legal_name = "yes"; } else { site.req_legal_name = "No!"; }
+
+            list.append('<tr>' +
+                '<td> <a href=info.html?site=' + site.name + '>' + site.name + '</td>' +
+                '<td>' + site.url + '</td>' +
+                '<td>' + site.change_name + '</td>' +
+                '<td>' + site.change_display_name + '</td>' +
+                '<td>' + site.req_legal_name + '</td>' +
+                '</tr>')
+
         }
     });
 };
