@@ -56,7 +56,7 @@ function loadPageData() {
             var row = document.getElementById(site.name);
 
             row.addEventListener("click", () => {
-                window.location.href = 'http://change-my-name.github.io/info.html?site=' + site.name
+                window.location.href = 'info.html?site=' + site.name
             });
         }
     });
