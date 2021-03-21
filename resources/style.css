@@ -122,6 +122,24 @@ tbody tr:last-child td:last-child {
     border-radius: 25px;
 }
 
+.home-button {
+    width: 175px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #4099ff; 
+    color: black; 
+    /* border: 2px solid #4099ff; */
+    border-radius: 15px;
+}
+
 /* Remove underline from links until hover */
 
 a:link {
