@@ -1,170 +1,108 @@
-
-
 body {
     font-family: Verdana, Geneva, sans-serif;
-
-    /*background: #ffcce8;*/
-    transition: all 0.5s ease-in-out;
-    /*transition-duration: 0.5s;*/
     padding: 20px;
 
+    /*background: #ffcce8;*/
     background: #ccdbff;
-    /*background: radial-gradient(circle, rgba(204,219,255,1) 4%, rgba(204,219,255,1) 84%, rgba(255,204,232,1) 94%);*/
-
 }
-/*#githubIcon:hover ~ body {*/
-/*    background: #ccdbff*/
-/*}*/
-
 p {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
-
 .title {
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-
 }
-
-/*#app {*/
-/*    font-family: "Courier New", Courier, monospace;*/
-/*    font-weight: bold;*/
-/*}*/
-
 .titleBox {
-    font-size: 5.5vw;
-    word-spacing: 3px;
+    font-size: 5vw;
+    /*word-spacing: 3px;*/
+    word-spacing: 0.8vw;
     letter-spacing: 10px;
 
     color: #000000;
-
-    margin-bottom: 60px;
-    margin-left: 10px;
-
-    height: 250px;
+    margin-left: 5vw;
+    height: 20vw;
 }
-
-#headBit {
-
+.introContainer {
     margin-top: 35px;
     margin-bottom: 20px;
+}
+.info {
+    background-image: linear-gradient(to right,
+        rgba(200, 200, 255, 0.6),
+        rgba(255, 225, 225, 0.8),
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 225, 225, 0.8),
+        rgba(200, 200, 255, 0.6)
+    );
+    margin-top: 20px;
     margin-right: 150px;
     margin-left: 150px;
 }
-
-.info {
-
-    background-image: linear-gradient(to right,
-    rgba(200, 200, 255, 0.6),
-    rgba(255, 225, 225, 0.8),
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 225, 225, 0.8),
-    rgba(200, 200, 255, 0.6)
-    );
-
-    margin-top: 20px;
-}
-
 .table {
     background-color: #f7fbff;
     flex-grow: 1;
-
-    /*border-width: 1px !important;*/
-    /*border-style: solid !important;*/
-    /*border-color: rgba(0, 0, 0, 0.4) !important;*/
-    /*border-collapse: inherit;*/
     border-radius: 10px;
     border-top: none;
 }
-
-
-.smallerCuteTitle {
-    font-size: 30px;
-    font-family: "Lucida Console", Monaco, monospace;
-    /*letter-spacing: 15px;*/
-    /*word-spacing: -15px;*/
-    font-weight: bold;
-    font-style: normal;
-    font-variant: normal;
-}
-
-
 th {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }
-
 th:hover {
     background-color: #e0e0e0;
 }
-
 td {
     padding: 8px;
     text-align: left;
 }
-
 tr {
     background-color: #ffffff;
     cursor: pointer;
 }
-
 #topRow:hover {
     background-color: transparent;
 }
-
 tr:hover {
     background-color: #e0e0e0;
 }
 
-/* the first 'th' within the first 'tr' of the 'thead': */
+/*  Round the corners on the table  */
 thead tr:first-child th:first-child {
     border-radius: 0.5em 0 0 0;
 }
-/* the last 'th' within the first 'tr' of the 'thead': */
 thead tr:first-child th:last-child {
     border-radius: 0 0.5em 0 0;
 }
-/* the first 'td' within the last 'tr' of the 'tbody': */
 tbody tr:last-child td:first-child {
     border-radius: 0 0 0 0.5em;
 }
-/* the last 'td' within the last 'tr' of the 'tbody': */
 tbody tr:last-child td:last-child {
     border-radius: 0 0 0.5em 0;
 }
-
 #searchBar {
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
 }
-
 .input-icon{
     position: absolute;
     left: 17px;
     top: calc(50% - 0.85em); /* Keep icon in center of input, regardless of the input height */
 }
-input{
-    padding-left: 17px;
-}
 .input-wrapper{
     position: relative;
 }
-
 #githubIcon {
     float: right;
     height: 60px;
     width: 60px;
 }
 
-
-/* INFO PAGE specifics */
-
+/*  Info Page Styles  */
 .card {
     width: 75%;
     margin: 0 auto;
@@ -174,25 +112,20 @@ input{
     border: 2px solid black;
     border-radius: 25px;
 }
-
 .home-button {
     text-decoration: underline;
 }
 
 /* Remove underline from links until hover */
-
 a:link {
     text-decoration: none;
 }
-
 a:visited {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 a:active {
     text-decoration: underline;
 }
@@ -207,8 +140,8 @@ hr.bLine2 { /* Cool line under "Welcome to Mixr" */
     width: 50%;
     float: left;
 }
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/*   Responsive layout - when the screen is less than 800px wide,   */
+/*   make the two columns stack on top of each other instead of next to each other   */
 @media screen and (max-width: 800px) {
     .card, .subheader {
         width: 100%;

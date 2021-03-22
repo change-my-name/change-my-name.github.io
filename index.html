@@ -4,48 +4,52 @@
 
 <head>
     <title>Change My Name</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="resources/transPrideFlag.png"/>
+
+<!--    Bootstrap Stylesheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/style.css">
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="resources/scripts.js"></script>
-    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<!--    Font-Awesome, for small icons and such-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<!--    Our stylesheet-->
+    <link rel="stylesheet" href="resources/style.css">
+<!--    Ajax for getting JSON data-->
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--    Our Script.js file-->
+    <script type="text/javascript" src="resources/scripts.js"></script>
+<!--    Sortable list functionality-->
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 
-</head>
-
-<div id="headerish">
+<div>
     <a href="https://github.com/change-my-name/change-my-name.github.io">
         <img id="githubIcon" src="https://image.flaticon.com/icons/png/512/25/25231.png" width="40" height="40" alt="GitHub Icon">
     </a>
 </div>
 
+</head>
+
+
 <body id="body" onload="loadPageData()">
+<!--    <div onload="setInterval(myFunction(), 2000);" class="ml-5 mr-5">-->
+    <div name="spacer" style="height: 60px;"></div>
 
-<!--    <div class="ml-5 mr-5">-->
-    <div onload="setInterval(myFunction(), 2000);" class="ml-5 mr-5">
+    <div class="introContainer text-center">
+        <div class="titleBox">
+            <div id="app" class="text-left" style="font-family: \'Courier New\', Courier, monospace; font-weight: bold; ">
+            </div>
+            <div class="title text-left">Change My Name</div>
+        </div>
 
-        <div id="headBit">
+        <div name="spacer" style="height: 50px;"></div>
 
-            <div class="text-center">
-                <div name="spacer" style="height: 60px;"></div>
-
-                <div class="titleBox">
-                    <div id="app" class="text-left" style="font-family: \'Courier New\', Courier, monospace; font-weight: bold; ">
-                    </div>
-                    <div class="title text-left">Change My Name</div>
-                </div>
-
-                <div name="spacer" style="height: 50px;"></div>
-
-                <div class="info pt-4 pl-5 pr-5 shadow-lg pb-2 mb-5 rounded">
-                    <p>
-                        Change-My-Name is a regularly maintained catalogue of various
-                        webservices and social media outlets, that details which services
-                        allow users to edit personal information, in particular, to change
-                        your name. We'll even show you how!
-                        </br></br>
-        <!--                This bit of text can go somewhere else... give me a sec I'm working on it...-->
+        <div class="info pt-4 pl-5 pr-5 shadow-lg pb-2 mb-5 rounded">
+            <p>
+                Change-My-Name is a regularly maintained catalogue of various
+                webservices and social media outlets, that details which services
+                allow users to edit personal information, in particular, to change
+                your name. We'll even show you how!
+                </br></br>
+        <!--                This bit of text can go somewhere else... it just doesn't quit fit here.  -->
 
         <!--                May this project stand to unveil the vast amount of sites that-->
         <!--                poorly handle names, so they may self-correct and provide a safe-->
@@ -55,18 +59,17 @@
         <!--                appreciated in the trans community, where your name is both a personal-->
         <!--                identification and an outwardly expressive experience.-->
 
-                        Keeping this list current and maintainable has always been in the
-                        project scope; A list like this will, in the end, never be complete.
-                        The more people who involve themselves in this project, the longer
-                        the list will be! We need your help.
-                    </p>
-                </div>
-
-
-                <div name="spacer" style="height: 50px;"></div>
-            </div>
+                Keeping this list current and maintainable has always been in the
+                project scope; A list like this will, in the end, never be complete.
+                The more people who involve themselves in this project, the longer
+                the list will be! We need your help.
+            </p>
         </div>
+    </div>
 
+    <div name="spacer" style="height: 50px;"></div>
+
+    <div class="ml-5 mr-5">
         <div class="input-group">
             <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search for a web site/service..">
             <label for="searchBar" class="fa fa-search input-icon"></label>
@@ -85,55 +88,48 @@
                 </thead>
                 <thead></thead>
                 <tbody id="list">
-<!--                List is generated via JavaScript right here, in the table body   -->
+    <!--                List is generated via JavaScript right here, in the table body   -->
                 </tbody>
             </table>
         </div>
     </div>
 
-<!--   This script's gotta stay here, before </body>   -->
-<script src="typewriterjs-master/dist/core.js"></script>
+    <!--   This script's gotta stay here, before </body>   -->
+    <script src="typewriterjs-master/dist/core.js"></script>
 
-<!--    Script in html is nasty, but this one's also gotta stay unless you can get it to work in scripts.js!    -->
-<script>
-    var app = document.getElementById('app');
+    <!--    Script in html is nasty, but this one's also gotta stay unless someone can get it to work in scripts.js!    -->
+    <script>
+        var app = document.getElementById('app');
 
-    var typewriter = new Typewriter(app, {
-        delay: 300,
-        loop: true
-    });
+        var typewriter = new Typewriter(app, {
+            delay: 300,
+            loop: true
+        });
 
-    var strings = [
-        'Why is it so hard to',
-        'How do I',
-        'Will it let me',
-        'Is it possible to',
-        'But can I',
-        'I want to',
-        'Why can\'t I',
-        '',
-    ]
+        var strings = [
+            'Why is it so hard to',
+            'How do I',
+            'Will it let me',
+            'Is it possible to',
+            'But can I',
+            'I want to',
+            'Why can\'t I',
+            '',
+        ]
 
-    for (var i in strings) {
-        typewriter.typeString(strings[i])
-            .pauseFor(1500)
-            .deleteAll(150)
-            .start();
-
-
-            // .pauseFor(2500)
-            // .deleteChars(7)
-            // .typeString('altered!')
-    }
-
-</script>
-
+        for (var i in strings) {
+            typewriter.typeString(strings[i])
+                .pauseFor(1500)
+                .deleteAll(150)
+                .start();
+        }
+    </script>
 </body>
 
 <div name="spacer" style="height: 90px;"></div>
 
 <footer>
-    <div class="info text-center pt-3 pl-3 pr-3 pb-1 shadow-lg mb-5 rounded">
+    <div class="info text-center pt-3 pl-3 pr-3 pb-1 mb-5 rounded shadow-lg">
         <p>Created by Team 4 Hours of Sleep for T9Hacks, Spring 2021</p>
     </div>
 </footer>
