@@ -22,25 +22,35 @@ p {
 }
 
 .title {
-    padding: 20px;
-
-    font-size: 57px;
-    /*font-family: "Lucida Console", Monaco, monospace;*/
     font-family: "Courier New", Courier, monospace;
-
-    font-family: "Courier New", Courier, monospace;
-    letter-spacing: 4px;
-    word-spacing: 3.4px;
-
-    letter-spacing: 15px;
-    color: #000000;
-    word-spacing: -15px;
     font-weight: bold;
-    font-style: normal;
-    font-variant: normal;
 
-    margin-right: 200px;
-    margin-left: 200px;
+}
+
+#app {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+.titleBox {
+    font-size: 5.5vw;
+    word-spacing: 3px;
+    letter-spacing: 10px;
+
+    color: #000000;
+
+    margin-bottom: 60px;
+    margin-left: 10px;
+
+    height: 250px;
+}
+
+#headBit {
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 .info {
@@ -54,9 +64,6 @@ p {
     );
 
     margin-top: 20px;
-    margin-bottom: 60px;
-    margin-right: 150px;
-    margin-left: 150px;
 }
 
 .table {
@@ -154,7 +161,6 @@ input{
     height: 60px;
     width: 60px;
 }
-
 
 
 /* INFO PAGE specifics */
