@@ -1,16 +1,15 @@
+// var colorChange = function() {
+//
+//     if (document.getElementById('body').style.background === "#ccdbff") {
+//         bgColor = "#ffcce8";
+//     }
+//     else {
+//         bgColor = "#ccdbff";
+//     }
+//     document.getElementById('body').style.background = bgColor;
+// };
 
-var colorChange = function() {
-
-    if (document.getElementById('body').style.background === "#ccdbff") {
-        bgColor = "#ffcce8";
-    }
-    else {
-        bgColor = "#ccdbff";
-    }
-    document.getElementById('body').style.background = bgColor;
-};
-
-var timer = setInterval(colorChange, 1500); // call every 1000 milliseconds
+// var timer = setInterval(colorChange, 1500); // call every 1000 milliseconds
 
 
 function loadPageData() {
@@ -40,20 +39,20 @@ function loadPageData() {
             } else {
                 site.req_legal_name = "No!";
             }
+
             switch(site.grade){
                 case "Good":
-                    site.grade = "Good &#x2705;";
+                    site.grade = "&#x2705; Good";
                     break;
                 case "Mediocre":
-                    site.grade = "Mediocre &#x26A0;";
+                    site.grade = "&#x26A0; Mediocre";
                     break;
                 case "Poor":
-                    site.grade = "Poor &#x274C;";
+                    site.grade = "&#x274C; Poor";
                     break;
                 case "Unchangeable":
-                    site.grade = "Unchangeable &#x1F6AB;"
+                    site.grade = "&#x1F6AB; Horrible"
             }
-
 
             list.append(
                 '<tr id=' + site.name + '>' +
@@ -115,14 +114,12 @@ function GetURLParameter(sParam){
   }
 
 function searchFunction() {
-    // Declare variables
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchBar");
     filter = input.value.toUpperCase();
     table = document.getElementById("theList");
     tr = table.getElementsByTagName("tr");
 
-    // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
         if (td) {
