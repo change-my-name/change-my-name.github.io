@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "elliptic": "^6.5.4",
+    "node-notifier": "^9.0.1",
+    "ssri": "^8.0.1"
+  }
+}
