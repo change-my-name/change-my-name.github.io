@@ -51,7 +51,7 @@ th {
     cursor: pointer;
 }
 th:hover {
-    background-color: #e0e0e0;
+    background-color: #cccccc;
 }
 td {
     padding: 8px;
