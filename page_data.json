@@ -143,7 +143,68 @@
       "criteria":[
         "Reddit usernames cannot be changed in any way, including things as small as capitalization"
       ]
+    },
+    {
+      "name": "SoundCloud",
+      "url": "https://soundcloud.com",
+      "change_name": "N/A",
+      "change_display_name": true,
+      "req_legal_name": false,
+      "support": "https://help.soundcloud.com/hc/en-us/articles/115003567968-Your-Display-Name-and-Profile-URL",
+      "grade": "Good",
+      "criteria":[
+        "Can change display name and profile URL"
+      ]
+    },
+    {
+      "name": "Venmo",
+      "url": "https://venmo.com",
+      "change_name": true,
+      "change_display_name": true,
+      "req_legal_name": false,
+      "support": "https://help.venmo.com/hc/en-us/articles/217532247-Edit-Account-and-Notification-Settings",
+      "grade": "Good",
+      "criteria":[
+        "Can change display name without needing legal name"
+      ]
+    },
+    {
+      "name": "Zoom",
+      "url": "https://zoom.us",
+      "change_name": "N/A",
+      "change_display_name": true,
+      "req_legal_name": false,
+      "support": "https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-profile",
+      "grade": "Good",
+      "criteria":[
+        "Accounts only have display name, no username"
+      ]
+    },
+    {
+      "name": "Letterboxd",
+      "url": "https://letterboxd.com",
+      "change_name": false,
+      "change_display_name": true,
+      "req_legal_name": false,
+      "support": "https://news.letterboxd.com/post/142430223918/usernames",
+      "grade": "Mediocre",
+      "criteria":[
+        "Can only change username if user has Pro, or if they need to for privacy reasons/if it contains user's deadname"
+      ]
+    },
+    {
+      "name": "Apple",
+      "url": "https://apple.com",
+      "change_name": true,
+      "change_display_name": true,
+      "req_legal_name": false,
+      "support": "https://support.apple.com/guide/mac-help/change-phone-email-preferences-apple-mac-mchlfee1ae3a/mac",
+      "grade": "Good",
+      "criteria":[
+        "Can change display name and username"
+      ]
     }
+    
 
   ],
 
