@@ -42,16 +42,16 @@ function loadPageData() {
 
             switch(site.grade){
                 case "Good":
-                    site.grade = "&#x2705; Good";
+                    site.grade = "Good &#x2705;";
                     break;
                 case "Mediocre":
-                    site.grade = "&#x26A0; Mediocre";
+                    site.grade = "Mediocre &#x26A0;";
                     break;
                 case "Poor":
-                    site.grade = "&#x274C; Poor";
+                    site.grade = "Poor &#x274C;";
                     break;
                 case "Unchangeable":
-                    site.grade = "&#x1F6AB; Horrible"
+                    site.grade = "Unchangeable &#x1F6AB;"
             }
 
             list.append(
