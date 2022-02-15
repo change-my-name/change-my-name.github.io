@@ -42,16 +42,16 @@ function loadPageData() {
 
             switch(site.grade){
                 case "Good":
-                    site.grade = "&#x2705; Good";
+                    site.grade = "Good &#x2705;";
                     break;
                 case "Mediocre":
-                    site.grade = "&#x26A0; Mediocre";
+                    site.grade = "Mediocre &#x26A0;";
                     break;
                 case "Poor":
-                    site.grade = "&#x274C; Poor";
+                    site.grade = "Poor &#x274C;";
                     break;
                 case "Unchangeable":
-                    site.grade = "&#x1F6AB; Horrible"
+                    site.grade = "Unchangeable &#x1F6AB;"
             }
 
             list.append(
@@ -94,7 +94,7 @@ function updateSiteInfo(req) {
     document.getElementById("change-display").innerHTML = `Can change display name: <b>${req.change_display_name}</b>`;
     document.getElementById("grade").innerHTML = `Grade: ${req.grade}`;
     if("support" in req){
-        document.getElementById("process-link").innerHTML = `<a href=${req.process}>Support Article</a>`;
+        document.getElementById("process-link").innerHTML = `<a href=${req.support}>Support Article</a>`;
         document.getElementById("process-link").hidden = false;
     }
     for(let c of req.criteria){

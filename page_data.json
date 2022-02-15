@@ -76,10 +76,10 @@
       "change_display_name": true,
       "req_legal_name": false,
       "support": "https://support.spotify.com/us/article/change-my-username/",
-      "grade": "Poor",
+      "grade": "Mediocre",
       "criteria":[
-        "Can only be changed on mobile platforms",
-        "Only display name can be changed, username is permanent"
+        "Only display name can be changed, username is permanent",
+        "With the new (March 25 2021) web and desktop client update, display name can be changed on all platforms"
       ]
     },
     {
