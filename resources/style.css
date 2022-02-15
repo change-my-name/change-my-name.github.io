@@ -96,13 +96,40 @@ tbody tr:last-child td:last-child {
 .input-wrapper{
     position: relative;
 }
-#githubIcon {
+#githubIcon{
+    display: inline-block;
+    vertical-align:top;
     float: right;
     height: 60px;
     width: 60px;
 }
+#aboutUsIcon{
+    display: inline-block;
+    vertical-align:top;
+    float: left;
+    width: 10px;
+    height: 10px;
+}
 
-/*  Info Page Styles  */
+#banner{
+    max-width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+#aboutButton{
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+
+
+
+
+
+/* ------------------ Info Page Styles ------------------ */
 .card {
     width: 75%;
     margin: 0 auto;
